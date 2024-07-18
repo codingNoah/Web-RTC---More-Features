@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="username">username:</h1>
+    </div>
+    <div style="margin: 10px 0px">
+      <button id="call">Call</button>
+      <button id="mute">Mute</button>
+      <button id="video-off">Video off</button>
+    </div>
+    <div class="row mb-3 mt-3 justify-content-md-center" id="offers"></div>
+    <div style="display: flex; gap: 10px">
+      <section style="flex: 1">
+        <video
+          style="width: 100%"
+          id="local-video"
+          controls
+          playsinline
+          autoplay
+        ></video>
+        <section id="share-screen">share screen</section>
+      </section>
+      <section style="flex: 1">
+        <video
+          style="width: 100%"
+          id="remote-video"
+          controls
+          playsinline
+          autoplay
+        ></video>
+      </section>
+    </div>
+  </body>
+  <script
+    src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+    integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./main.js"></script>
+</html>
